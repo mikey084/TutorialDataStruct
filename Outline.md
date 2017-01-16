@@ -10,7 +10,7 @@ Exploring data Structures in Python implementing Stack, Queue, Deque, LinkedList
 tutorial:
 Implementation of a Graph and writing a tutorial on solving a graph algorithm question. WordLadder or any other Breadth first Search algorithm question.
 
-
+Undirected Directed graphs
 Python~
 Intro:
 Brief introduction of definition of Graphs
