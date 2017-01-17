@@ -37,4 +37,13 @@ A more space efficient way to implement a loosely connected graph data structure
 
 ![file directory and pom image](./img/adjlist.png)
 
-In an adjacency list a master list of all vertices in the graph is kept and each vertex maintains a list of vertices it's edges are connecting it to. Easy to represent a sparse graph as well as find all links to a particular vertex. 
+In an adjacency list, a master list of all vertices in the graph is kept and each vertex maintains a list of vertices it's edges are connected to. Easy to represent a sparse graph while displaying all links to a particular vertex.
+
+What is a common algorithm used to traverse a graph data structure?
+
+Breadth first search is a common algorithm but before we dive into it we must first understand the Queue abstract data type that breadth first search implements.
+
+What is a Queue?
+a queue is an ordered collection of items where adding new items occurs at one end (rear) and the removal of items occurs at the other end (front). This ordering strategy is called FIFO, first in first out. A simpler way of understanding it would be with the phrase "first come first served!". A real world comparison to a queue would be lining up to make a purchase, as people are drawn up at the register your position in the queue slowly makes it's way to the front.
+
+![file directory and pom image](./img/q.png)
