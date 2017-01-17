@@ -1,4 +1,5 @@
 
+
 In this tutorial we will be studying the abstract graph data structure. Graphs can be used to solve many real world problems. In our modern world that relies on connections and networks, graphs are used to represent systems of roads, internet connections, and even the list of classes required to graduate.
 
 What are we aiming to cover?
@@ -47,3 +48,49 @@ What is a Queue?
 a queue is an ordered collection of items where adding new items occurs at one end (rear) and the removal of items occurs at the other end (front). This ordering strategy is called FIFO, first in first out. A simpler way of understanding it would be with the phrase "first come first served!". A real world comparison to a queue would be lining up to make a purchase, as people are drawn up at the register your position in the queue slowly makes it's way to the front.
 
 ![file directory and pom image](./img/q.png)
+
+The queue data type holds the operations of Dequeue() Enqueue() dequeue() isEmpty() and size() which are implemented in the Queue.py file. Not only is it implemented in Breadth First Search in graphs but also with dynamic arrays and linked lists.
+
+```Python
+class Queue(object):
+    def __init__(self):
+      self.items = []
+
+    def Dequeue(self):                #remove item from front!
+      self.items.pop()
+
+    def Enqueue(self, item):          #add item to the Rear
+      self.items.insert(0, item)
+
+    def size(self):
+      return len(self.items)
+
+    def isEmpty(self):
+      return self.items = []
+
+```
+
+What is Breadth First Search?
+Okay say we have a graph and we want to visit every single node. Breadth First Search(BFS) is an algorithm for traversing graphs starting from a selected starting node and exploring layer wise. By exploring the starting nodes neighbors breadth first search doesn't move to the next layer until all neighbors are explored from the current node. It implements a Queue to store the visited nodes. Below is the code implementation of BFS. The boolean visited in the Node class lets BFS mark each node as it searches the graph.
+
+```Python
+class Node(object):
+    def __init__(self, name):
+      self.name = name
+      self.adjacencyList = []
+      self.visited = False
+
+def BFS(self, startNode):
+    q = Queue()              #initializes Queue
+    q.Enqueue(startNode)   #places root node into Queue
+    startNode.visited = True     #sets startNode as visited
+
+    while q:                    #while q is not empty
+      currentNode = q.Dequeue()   #current node to check it's neighbors
+      for n in currentNode.adjacencyList:   #loop neighbors
+        if not n.visited:
+          n.visited = True
+          q.append(n)                   #add neighbors to q
+```
+
+![file directory and pom image](./img/BFSgraph.png)
