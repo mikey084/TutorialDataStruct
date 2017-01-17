@@ -93,4 +93,4 @@ def BFS(self, startNode):
           q.append(n)                   #add neighbors to q
 ```
 
-![file directory and pom image](./img/BFSgraph.png)
+![file directory and pom image](./img/BFS.png)
