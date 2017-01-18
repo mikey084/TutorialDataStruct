@@ -5,7 +5,7 @@ In this tutorial we will be studying the abstract graph data structure. Graphs c
 What are we aiming to cover?
 Learn the about the components of a graph and how they form the graph data structure.
 Learn to represent graphs through adjacency matrix and adjacency linkedList
-Implement graph and apply two popular graph algorithms Breadth First Search and Depth First Search. And the Stack and Queue data structures associated with each.
+Implement graph and apply the popular graph algorithms Breadth First Search and the Queue data structures associated with it.
 
 
 What are the parts that comprise a graph?
@@ -94,3 +94,13 @@ def BFS(self, startNode):
 ```
 
 ![file directory and pom image](./img/BFS.png)
+diagram from: https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/
+
+In the diagram above the graph traversal begins at the root node "s" and push "s" into the Queue. Root node "s" will then be popped off the queue.
+current Queue contents [s] to []
+"s" neighbors node 1 and node 2 will then be traversed and pushed in the queue and marked as visited.
+[2,1]
+node 1 will be popped from the Queue and it's neighbors will be traversed and placed into the queue if they have not been visited.
+node 3 will be marked as visited and pushed into the queue.
+[3,2]
+and so on.
