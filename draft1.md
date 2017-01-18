@@ -93,7 +93,7 @@ def BFS(self, startNode):
           q.append(n)                   #add neighbors to q
 ```
 
-![file directory and pom image](./img/BFSgraph.jpg)
+![file directory and pom image](./img/BFS.png)
 diagram from: https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/
 
 In the diagram above the graph traversal begins at the root node "s" and push "s" into the Queue. Root node "s" will then be popped off the queue.
