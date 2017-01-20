@@ -97,16 +97,18 @@ def BFS(self, startNode):
 
 
 
-
+###Diagram A
 In the diagram above the graph traversal begins at the root node "s" and push "s" into the Queue. Root node "s" will then be popped off the queue.
 
+###Diagram B, C
 current Queue contents [s] to []
 "s" neighbors node 1 and node 2 will then be traversed and pushed in the queue and marked as visited.
 [2,1]
 
+###Diagram D+
 node 1 will be popped from the Queue and it's neighbors will be traversed and placed into the queue if they have not been visited.
 node 3 will be marked as visited and pushed into the queue.
 [3,2]
 and so on.
 
-Following this general pattern each node's neighbors will be explored before proceeding to the Neighbor's neighbors due to the nature of using a Queue.
+Following this general pattern each node's neighbors will be explored before proceeding to the Neighbor's neighbors due to the nature of using a Queue. And here you have it, Breadth First Search.
