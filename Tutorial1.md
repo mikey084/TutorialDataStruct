@@ -45,7 +45,7 @@ In an adjacency list, a master list of all vertices in the graph is kept and eac
 Breadth first search is a common algorithm but before we dive into it we must first understand the Queue abstract data type that breadth first search implements.
 
 ###What is a Queue?
-a queue is an ordered collection of items where adding new items occurs at one end (rear) and the removal of items occurs at the other end (front). This ordering strategy is called FIFO, first in first out. A simpler way of understanding it would be with the phrase "first come first served!". A real world comparison to a queue would be lining up to make a purchase, as people are drawn up at the register your position in the queue slowly makes it's way to the front.
+A queue is an ordered collection of items where adding new items occurs at one end (rear) and the removal of items occurs at the other end (front). This ordering strategy is called FIFO, first in first out. Some people call it "first come first served!". A comparison to a queue would be like lining up to make a purchase, as people pay at the register your relative position in the queue slowly makes it's way to the front.
 
 ![file directory and pom image](./img/q.png)
 
